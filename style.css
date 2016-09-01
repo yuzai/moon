@@ -1,12 +1,15 @@
-html {
-  height: 100%;
+html{
+	height:100%;
 }
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  animation: colorchange 5s infinite linear;
+  background-color: skyblue;
+  height:100%;
+}
+.back{
+	margin:auto 0px auto;
+	width:40%;
+	height:50%;
+	animation: colorchange 5s infinite linear;
 }
 .container {
   position: relative;
@@ -16,6 +19,7 @@ body {
 .moon, .dog {
   position: absolute;
   top: 0;
+  margin:50% 120%;
   width: 150px;
   height: 150px;
   border-radius: 100%;
