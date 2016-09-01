@@ -1,0 +1,52 @@
+html {
+  height: 100%;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  animation: colorchange 5s infinite linear;
+}
+.container {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+.moon, .dog {
+  position: absolute;
+  top: 0;
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+
+}
+
+.moon {
+  background: #FEAD03;
+}
+
+.dog {
+  background: #000;
+  animation: time 5s infinite linear, colorchange 5s infinite linear;
+}
+
+@keyframes colorchange{
+  0% {
+    background: #fff;
+  }
+  50% {
+    background: #000;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@keyframes time {
+  0% {
+    left: 160px;
+  }
+  100% {
+    left: -160px;
+  }
+}
