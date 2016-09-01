@@ -1,4 +1,43 @@
 
+#text{
+	font-family: Verdana;
+	margin:50px;
+	padding:50px;
+}
+#text h1{
+	color:green;
+	font-size:50px;
+	padding-bottom: 5px;
+	border-bottom: 2px solid red;
+}
+#text p{
+	margin:auto;
+	padding:10px 20px;
+	width:50%;
+	height:20%;
+	font-size: 20px;
+	animation: colorchange 10s infinite linear;
+}
+#text footer{
+	position:fixed;
+	bottom:20px;
+}
+#text footer a:link{
+	text-decoration: none;
+	color:green;
+}
+#text footer a:visited{
+	text-decoration: none;
+	color:black;
+}
+#text footer a:hover{
+	text-decoration: underline;
+	color:red;
+}
+#text footer a:active{
+	text-decoration: underline;
+	color:blue;
+}
 body {
   background-color: skyblue;
 /*  border:5px yellow solid;*/
@@ -9,7 +48,7 @@ body {
 	right:0px;
 	width:500px;
 	height:25%;
-	animation: colorchange 60s infinite linear;
+	animation: colorchange 10s infinite linear;
 /*	border:5px green solid;*/
 }
 .container {
@@ -36,7 +75,7 @@ body {
 
 .dog {
   background: #000;
-  animation: time 60s infinite linear, colorchange 60s infinite linear;
+  animation: time 10s infinite linear, colorchange 10s infinite linear;
 }
 
 @keyframes colorchange{
