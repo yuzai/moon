@@ -1,28 +1,32 @@
-html{
-	height:100%;
-}
+
 body {
   background-color: skyblue;
-  height:100%;
+/*  border:5px yellow solid;*/
 }
 .back{
-	margin:auto 0px auto;
-	width:40%;
-	height:50%;
-	animation: colorchange 5s infinite linear;
+	position:fixed;
+	bottom:0px;
+	right:0px;
+	width:500px;
+	height:25%;
+	animation: colorchange 60s infinite linear;
+/*	border:5px green solid;*/
 }
 .container {
-  position: relative;
+  position:relative;
+  left:35%;
   width: 150px;
   height: 150px;
+/*  border:5px red solid;*/
 }
 .moon, .dog {
-  position: absolute;
+  position:absolute;
   top: 0;
-  margin:50% 120%;
   width: 150px;
   height: 150px;
   border-radius: 100%;
+/*  border:5px yellow solid;*/
+  z-index:1;
 
 }
 
@@ -32,7 +36,7 @@ body {
 
 .dog {
   background: #000;
-  animation: time 5s infinite linear, colorchange 5s infinite linear;
+  animation: time 60s infinite linear, colorchange 60s infinite linear;
 }
 
 @keyframes colorchange{
